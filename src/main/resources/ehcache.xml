@@ -2,6 +2,9 @@
 <!DOCTYPE ehcache>
 <ehcache>
 
+
+    <diskStore path="C:/TEMP/ehcache"/>
+
     <defaultCache
             name="default"
             maxElementsInMemory="5"
@@ -12,6 +15,7 @@
             diskPersistent="false"
             memoryStoreEvictionPolicy="LRU"
     />
+
     <cache
             name="com.mgk021.model.entity.AppUser"
             maxElementsInMemory="10000"
@@ -30,6 +34,14 @@
     />
     <cache
             name="com.mgk021.model.entity.RoleAccess"
+            maxElementsInMemory="10000"
+            eternal="false"
+            timeToIdleSeconds="300"
+            timeToLiveSeconds="600"
+            overflowToDisk="true"
+    />
+    <cache
+            name="com.mgk021.model.entity.AppUserRole"
             maxElementsInMemory="10000"
             eternal="false"
             timeToIdleSeconds="300"

@@ -1,11 +1,15 @@
 package com.mgk021.model.entity;
 
 
+import org.hibernate.annotations.CacheConcurrencyStrategy;
+
 import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity(name = "AppUserRole")
 @Table(name = "users_roles")
+@Cacheable
+@org.hibernate.annotations.Cache(usage = CacheConcurrencyStrategy.READ_WRITE )
 public class AppUserRole implements Serializable {
 
     @Id

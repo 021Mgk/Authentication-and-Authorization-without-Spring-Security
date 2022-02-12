@@ -31,7 +31,7 @@ public class AuthenticationAuthorizationWithoutSpringSecurityApplication {
         SpringApplication.run(AuthenticationAuthorizationWithoutSpringSecurityApplication.class, args);
     }
 
-//
+
 //    @Bean
 //    public CommandLineRunner runner() {
 //        return args -> {
@@ -82,11 +82,11 @@ public class AuthenticationAuthorizationWithoutSpringSecurityApplication {
 //
 //
 //
-
-
-    //can not request to these api's
+//
+//
+////    can not request to these api's
 //            RoleAccess roleAccess7 = new RoleAccess("/api/v1/s/expert", role2.getRoleName(), "PUT");
-
+//
 //            RoleAccess roleAccess8 = new RoleAccess("/api/v1/s/member", role3.getRoleName(), "POST");
 //            RoleAccess roleAccess10 = new RoleAccess("/api/v1/s/member",role3.getRoleName(), "PUT");
 //            RoleAccess roleAccess9 = new RoleAccess("/api/v1/s/expert", role3.getRoleName(), "GET");
